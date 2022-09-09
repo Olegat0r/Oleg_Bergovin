@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="700">
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="search">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" maxlength="10">
+                        <input type="submit" value="Искать">
+                        <p><input type="checkbox" name="check1">на сайте<input type="checkbox" name="check2">в google</p>
+                    </fieldset>                    
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="searchwithlabel">
+                    <fieldset>
+                        <label>                    
+                        <legend>Строка поиска</legend>  
+                        <input type="text" required>*                     
+                        <input type="submit" value="Искать">                
+                        <p>
+                            <input type="checkbox">на сайте<input type="checkbox">в google
+                        </p>
+                        </label>                    
+                    </fieldset>                    
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="login">
+                    <fieldset>                   
+                        <legend>Авторизуйтесь</legend>  
+                        <p>
+                            <input type="login" name="login" required>*Логин
+                        </p>                    
+                        <p>
+                            <input type="password" name="password" required>*Пароль
+                        </p>                                       
+                        <p>
+                            <input type="checkbox">Оставаться в системе
+                        </p> 
+                        <p>
+                            <input type="submit" value="Войти">
+                        </p>                                      
+                    </fieldset>                    
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="vote">
+                    <fieldset>                   
+                        <legend>Как вам?</legend>  
+                        <p>
+                            <input type="radio" name="answer" value="a1">ничего
+                        </p>                    
+                        <p>
+                            <input type="radio" name="answer" value="a2">не плохо
+                        </p>                                       
+                        <p>
+                            <input type="radio" name="answer" value="a3">хорошо
+                        </p> 
+                        <p>
+                            <input type="radio" name="answer" value="a4">супер
+                        </p>  
+                        <p>
+                            <input type="submit" value="Отправить">
+                        </p>                                      
+                    </fieldset>                    
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="feedback">
+                    <fieldset>                                           
+                        <legend>Оставьте Ваш отзыв</legend>  
+                        <p>
+                            <input type="name" name="name" required>*Имя
+                        </p>                    
+                        <p>
+                            <input type="email" name="email" required>*e-mail
+                        </p>                                       
+                        <p>
+                            <textarea name="comment"></textarea></p>
+                        <p>
+                            <input type="submit">
+                        </p>                                                              
+                    </fieldset>                    
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="city">
+                    <fieldset>                                           
+                        <legend>Города РБ</legend>
+                        <p>
+                            <select name="city">
+                            <optgroup label="Города РБ">
+                             <option value="sb1">Брест</option>
+                             <option value="sb2">Минск</option>
+                             <option value="sb3">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                             <option value="sr1">Москва</option>
+                             <option value="sr2">Рязань</option>
+                             <option value="sr3">Магадан</option>
+                            </optgroup>
+                           </select>
+                        </p>
+                           <p><input type="submit" value="Ок"></p>                                                                                  
+                    </fieldset>                    
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="Upload">
+                    <fieldset>                                           
+                        <legend>Upload</legend>
+                        <p>
+                            <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                        </p>                                                             
+                    </fieldset>                    
+                </form>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
