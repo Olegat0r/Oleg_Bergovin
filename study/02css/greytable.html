@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .left
+        {
+            float: left;
+            background-color: rgb(151, 150, 150);
+            width: 15em;
+        }
+        .right1
+        {
+            background-color: rgb(56, 56, 56);
+            margin-bottom: .2em;
+        }
+        .right2
+        {
+            background-color: rgb(56,56,56);
+            margin-bottom: .2em;
+        }
+        .pict
+        {
+            float: right;
+            
+        }
+        .bot
+        {
+            background-color: rgb(56, 56, 56);
+        }
+    </style>   
 </head>
 <body>
+    <div class="left">
+        <h4>Блок навигации</h4>
+        <ul>
+            <li>Ширина 15ем</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+        </ul>
+    </div>
+    <div>
+        <div class="right1">
+            <h4>Статья 1</h4>
+            Размер блока:
+            Занимает всю доступную ширину
+            Должен присутствовать цвет фона
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-
+            bottom
+        </div>
+        <div class="right2">
+            <h4>Статья 2</h4>
+            Размер блока:
+            Занимает всю доступную ширину
+            Должен присутствовать цвет фона
+            Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-
+            bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+            данной статьи для этой картинки
+            <div class="pict">
+                <img src="envelope.jpg" alt="img">
+            </div>
+        </div>
+        
+    </div>
+    <div class="bot">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+    </div>
     
 </body>
 </html>
