@@ -8,7 +8,6 @@
     <style>
         .left
         {
-            float: left;
             background-color: rgb(151, 150, 150);
             width: 15em;
         }
@@ -24,16 +23,24 @@
         }
         .pict
         {
-            float: right;
+            size: 1em;
+            display: flex;
+            justify-content: flex-end;
             
         }
         .bot
         {
             background-color: rgb(56, 56, 56);
         }
+        .all
+        {
+            display: flex;
+            background-color: rgb(193, 193, 193);
+        }
     </style>   
 </head>
 <body>
+    <div class="all">
     <div class="left">
         <h4>Блок навигации</h4>
         <ul>
@@ -65,6 +72,7 @@
             </div>
         </div>
         
+    </div>
     </div>
     <div class="bot">
         Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
